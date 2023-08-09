@@ -16,7 +16,7 @@ struct ContentView: View {
                 blobs: colors,
                 backlights: colors.map { $0.brighter(by: -0.3) }
             )
-            .background(.richBlack)
+            .background(Color.richBlack)
             
             VStack {
                 Image(systemName: "globe")
@@ -25,12 +25,24 @@ struct ContentView: View {
                 Text("Hello, world!")
             }
         }
-        .ignoresSafeArea()
+        .ignoreSafeAreaIfAvailable()
         .statusBar(hidden: true)
     }
     
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+extension View {
+    func ignoreSafeAreaIfAvailable() -> some View {
+        if #available(iOS 14, *) {
+            return self.ignoresSafeArea()
+        } else {
+            return self
+        }
+    }
 }

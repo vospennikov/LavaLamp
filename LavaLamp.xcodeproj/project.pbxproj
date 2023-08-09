@@ -16,6 +16,9 @@
 		DDAA87722A7E91C1002AA33A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAA87692A7E91C1002AA33A /* Preview Assets.xcassets */; };
 		DDAA87732A7E91C1002AA33A /* LavaLampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA876A2A7E91C1002AA33A /* LavaLampApp.swift */; };
 		DDAA87742A7E91C1002AA33A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA876B2A7E91C1002AA33A /* ContentView.swift */; };
+		FD6DE4A32A841F6800EC553B /* LavaLampAppWindowGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6DE4A22A841F6800EC553B /* LavaLampAppWindowGroup.swift */; };
+		FD6DE4A52A841F8900EC553B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6DE4A42A841F8900EC553B /* SceneDelegate.swift */; };
+		FDB68C312A841CAE00D75DC3 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB68C302A841CAE00D75DC3 /* ColorSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		DDAA87692A7E91C1002AA33A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DDAA876A2A7E91C1002AA33A /* LavaLampApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LavaLampApp.swift; sourceTree = "<group>"; };
 		DDAA876B2A7E91C1002AA33A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD6DE4A22A841F6800EC553B /* LavaLampAppWindowGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LavaLampAppWindowGroup.swift; sourceTree = "<group>"; };
+		FD6DE4A42A841F8900EC553B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FDB68C302A841CAE00D75DC3 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +68,14 @@
 			isa = PBXGroup;
 			children = (
 				DDAA87632A7E91C1002AA33A /* BlobLayer.swift */,
+				FDB68C302A841CAE00D75DC3 /* ColorSet.swift */,
 				DDAA876B2A7E91C1002AA33A /* ContentView.swift */,
 				DDAA87642A7E91C1002AA33A /* EntireViewLayer.swift */,
 				DDAA87672A7E91C1002AA33A /* FluidView.swift */,
 				DDAA87622A7E91C1002AA33A /* LavaLamp.swift */,
 				DDAA876A2A7E91C1002AA33A /* LavaLampApp.swift */,
+				FD6DE4A22A841F6800EC553B /* LavaLampAppWindowGroup.swift */,
+				FD6DE4A42A841F8900EC553B /* SceneDelegate.swift */,
 				DD220ADA2A80C507000FCED0 /* UIColor.Extensions.swift */,
 				DDAA87662A7E91C1002AA33A /* Assets.xcassets */,
 				DDAA87682A7E91C1002AA33A /* Preview Content */,
@@ -156,6 +165,9 @@
 				DDAA87732A7E91C1002AA33A /* LavaLampApp.swift in Sources */,
 				DDAA87742A7E91C1002AA33A /* ContentView.swift in Sources */,
 				DDAA876D2A7E91C1002AA33A /* BlobLayer.swift in Sources */,
+				FDB68C312A841CAE00D75DC3 /* ColorSet.swift in Sources */,
+				FD6DE4A52A841F8900EC553B /* SceneDelegate.swift in Sources */,
+				FD6DE4A32A841F6800EC553B /* LavaLampAppWindowGroup.swift in Sources */,
 				DDAA876C2A7E91C1002AA33A /* LavaLamp.swift in Sources */,
 				DD220ADB2A80C507000FCED0 /* UIColor.Extensions.swift in Sources */,
 				DDAA876E2A7E91C1002AA33A /* EntireViewLayer.swift in Sources */,
@@ -300,7 +312,7 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +327,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_STRICT_CONCURRENCY = targeted;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,7 +350,7 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -353,7 +365,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_STRICT_CONCURRENCY = targeted;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

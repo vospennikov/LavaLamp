@@ -75,7 +75,7 @@ final class FluidView: UIView {
             let timer = Timer.scheduledTimer(
                 withTimeInterval: .random(in: 0.8 / speed ... 1.2 / speed), repeats: true
             ) { _ in
-                Task { await blobLayer.animateLayer(with: speed) }
+                Task { blobLayer.animateLayer(with: speed) }
             }
             timers.append(timer)
         }

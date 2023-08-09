@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct LavaLampApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct LavaLampApp {
+    static func main() {
+        if #available(iOS 14.0, *) {
+            LavaLampAppWindowGroup.main()
+        } else {
+            UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(SceneDelegate.self))
         }
     }
 }
