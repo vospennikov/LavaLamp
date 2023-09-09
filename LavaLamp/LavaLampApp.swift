@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct LavaLampApp {
+enum LavaLampApp {
     static func main() {
         if #available(iOS 14.0, *) {
             LavaLampAppWindowGroup.main()
