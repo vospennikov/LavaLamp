@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    let colors: [UIColor] = [.lapisLazuli, .carolinaBlue, .charcoal, .hunyadiYellow, .orangePantone]
-    
+    let colors: [UIColor] = [
+        ColorSet.lapisLazuli,
+        ColorSet.carolinaBlue,
+        ColorSet.charcoal,
+        ColorSet.hunyadiYellow,
+        ColorSet.orangePantone,
+    ]
+
     var body: some View {
         ZStack {
             LavaLamp(
                 blobs: colors,
                 backlights: colors.map { $0.brighter(by: -0.3) }
             )
-            .background(Color.richBlack)
-            
+            .background(Color(with: ColorSet.richBlack))
+
             VStack {
                 Image(systemName: "globe")
                     .imageScale(.large)
@@ -28,7 +34,6 @@ struct ContentView: View {
         .ignoreSafeAreaIfAvailable()
         .statusBar(hidden: true)
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
